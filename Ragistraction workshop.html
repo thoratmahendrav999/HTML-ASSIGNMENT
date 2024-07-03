@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms Assignment 1</title>
+    <style>
+        #table1{
+            border: 1px solid black;
+        }
+        .box{
+            height: 20px;
+            width: 250px;
+        }
+        textarea{
+            resize: none;
+        }
+        #table2{
+            border: 1px solid black;
+            background-color: rgb(227, 227, 227);
+            height: 40px;
+        }
+        #btns{
+            display: flex;
+            justify-content: center;
+        }
+        .btn{
+            height: 30px;
+            width: 120px;
+            border: 1px solid black;
+            border-radius: 7px;
+            font-weight: bolder;
+            background-color: rgb(102, 158, 151);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <div id="table1">
+    <table width="100%" cellpadding="10">
+        <tr style="background-color: rgb(130, 214, 203);">
+            <th align="left">Workshop Registration</th>
+            <td colspan="3">More  Actions ▼</td>
+        </tr>
+        <tr>
+            <td colspan="4"><u>Register now while seats are available!</u></td>
+        </tr>
+        <tr>
+            <td><label for="firstName">First Name</label></td>
+            <td><input type="text" id="firstName" name="firstName" class="box"></td>
+            <td colspan="2"><u>Lunch</u></td>
+        </tr>
+        <tr>
+            <td><label for="lastName">Last Name</label></td>
+            <td><input type="text" id="lastName" name="lastName" class="box"></td>
+            <td><label for="meal">Meal Preference</label></td>
+            <td><select id="meal" name="meal" class="box">
+                <option>Vegetarian</option>
+                <option>Non-Vegetarian</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="company">Company Institution</label></td>
+            <td><input type="text" id="company" name="company" class="box"></td>
+            <td colspan="2"><u>Payment Details</u></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address</label></td>
+            <td><textarea name="address" id="address" rows="4" cols="33"></textarea></td>
+            <td><label for="payment">Payment Method</label></td>
+            <td>
+                <input type="checkbox" id="payment" name="payment">Cash
+                <br>
+                <input type="checkbox" id="payment" name="payment">Cheque 
+                
+                <br>
+                <input type="checkbox" id="payment" name="payment">Demant Draft
+            </td>
+        </tr>
+        <tr>
+            <td><label for="city">City</label></td>
+            <td><input type="text" id="city" name="city" class="box"></td>
+            <td><label for="dd">DD/Cheque No.</label></td>
+            <td><input type="text" id="dd" name="dd" class="box"></td>
+        </tr>
+        <tr>
+            <td><label for="state">State/Province/Region</label></td>
+            <td>
+                <select name="state" id="state" class="box">
+                    <option>-Select-</option>
+                    <option>Maharashtra</option>
+                    <option>Goi</option>
+                    <option>Bihar</option>
+                    <option>Andrapredesh</option>
+                </select>
+            </td>
+            <td><label for="bankName">Drawn On(Bank Name)</label></td>
+            <td><input type="text" name="bankName" id="bankName" class="box"></td>
+        </tr>
+        <tr>
+            <td><label for="country">country</label></td>
+            <td>
+                <select name="country" id="country" class="box">
+                    <option>-Select-</option>
+                    <option>India</option>
+                    <option>Shrilanka</option>
+                    <option>China</option>
+                    <option>Nepal</option>
+                </select>
+            </td>
+            <td><label for="payableat">Payable at</label></td>
+            <td><input type="text" name="payableat" id="payableat" class="box"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" id="email" name="email" class="box"></td>
+        </tr>
+        <tr>
+            <td><label for="phoneNumber">Phone Number</label></td>
+            <td><input type="number" name="phoneNumber" id="phoneNumber" class="box"></td>
+        </tr>
+    </table>
+    </div>
+    <div id="table2">
+        <table align="center" width="100%">
+            <tr id="btns">
+                <td><input type="submit" value="Submit" class="btn"></td>
+                <td><input type="reset" value="Reset" class="btn"></td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
